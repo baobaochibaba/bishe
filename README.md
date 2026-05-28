@@ -56,7 +56,7 @@
   `OCO-3 Level 2 bias-corrected XCO2 and other select fields from the full-physics retrieval aggregated as daily files, Retrospective processing V11r (OCO3_L2_Lite_FP 11r)`  
 - 下载时请筛选研究区域的经纬度及研究日期范围，将下载的 `.nc4` 文件放入同一文件夹，并修改 `test.m` 中的 `dataFolder` 路径。
 - 下载流程可参考该视频https://www.bilibili.com/video/BV1Mv411t7r6?vd_source=342f65127c2bf00be528cf1d10502674
-
+本设计选取的经纬度范围为107.6-109.5/33.7-34.75，时间为2021年11月14日至2022年3月15日
 #### ② ERA5 气象数据（.nc 文件）
 - 来源：[Copernicus Climate Data Store](https://cds.climate.copernicus.eu/)  
 - 所需变量：  
@@ -64,7 +64,7 @@
   - 10 米风速 v 分量 (`v10`)  
   - 边界层高度 (`blh`)  
   - 总云量 (`tcc`)  
-- 只需下载目标典型日的时间段，并裁剪到研究区域经纬度。  
+- 只需下载目标典型日的时间段，并裁剪到研究区域经纬度。（本设计最终选择日期为2022-02-24日目标经纬度的气象数据，经纬度同上oco3卫星数据）  
 - 修改 `test.m` 中 `era5_file` 的路径。
 -下载流程可参考该视频【ERA5气象数据数据下载】https://www.bilibili.com/video/BV1MU3vzoEuK?vd_source=342f65127c2bf00be528cf1d10502674
 #### ③ 负荷与电价数据
